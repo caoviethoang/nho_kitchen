@@ -1,26 +1,50 @@
 <div class="topnavbar-wrapper">
-  <%= image_tag 'top-background.png', class: "demo-bg" %>
-  <div class="top-row">
+  <%# <%= image_tag 'top-background.png', class: "demo-bg" %>
+  <div class="header">
     <div class="main-logo">
+      <%= image_tag 'logo.png', id: "logo" %>
     </div>
-    <div class="header-action">
+    <div class="header-action d-flex">
+      <div class="action text-white">
+        <%= link_to 'Home', root_path %>
+      </div>
+      <div  class="action text-white">
+        <%= link_to 'About us', root_path %>
+      </div>
+      <div  class="action text-white">
+        <%= link_to 'Menu', root_path %>
+      </div>
+      <div  class="action text-white">
+        <%= link_to 'Review', root_path %>
+      </div>
+      <div  class="action text-white">
+        <%= link_to 'Contact Us', root_path %>
+      </div>
+      <div  class="action text-white">
+        <%= link_to 'Order now', root_path, class: "order-now" %>
+      </div>
     </div>
   </div>
 
-  <div class="top-content">
+  <div class="top-content mt-5">
     <div class="top-main-title">
       <span>Good Food, Great Vibes</span>
     </div>
 
-    <div class="top-sub-title">
+    <div class="top-sub-title mb-3">
       <span>Experience the Best of Vietnam, Right on Your Plate</span>
     </div>
 
     <div class="double-quotes">
+      <i class="fa fa-quote-left" aria-hidden="true"></i>
     </div>
 
     <div class="book-table-btn">
       <span>Book a table</span>
     </div>
   </div>
+</div>
+
+<div class="main-content">
+
 </div>

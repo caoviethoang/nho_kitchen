@@ -17,6 +17,7 @@
 .topnavbar-wrapper {
   height: 800px;
   overflow: hidden;
+  background-color: black;
 }
 
 .demo-wrap {
@@ -35,4 +36,69 @@
 
 .top-content {
   position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  color: #FFFFFF;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+}
+
+.top-main-title {
+  font-size: 3rem;
+}
+
+.top-sub-title {
+  font-size: 0.8rem;
+}
+
+
+.book-table-btn {
+  border: 1px solid #efb722!important;
+  border-radius: 1rem;
+  padding: 0rem 0.8rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.book-table-btn:hover {
+  background-color: #efb722;
+  color: darkblue;
+}
+
+.header-action {
+  padding-left:  50%;
+  padding-right: 5%;
+  position: fixed;
+}
+
+.action {
+  margin-left: auto;
+}
+
+.action > a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.action > a:hover {
+  color: #efb722;
+}
+
+.order-now {
+  border: 1px solid #efb722!important;
+  border-radius: 1rem;
+  padding: 0rem 0.8rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.main-content {
+  background-color: #efb722;
+  height: 1000px;
 }
