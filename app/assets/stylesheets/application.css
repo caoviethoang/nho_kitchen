@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+.topnavbar-wrapper {
+  height: 800px;
+  overflow: hidden;
+}
+
+.demo-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-bg {
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.top-content {
+  position: relative;
+}
