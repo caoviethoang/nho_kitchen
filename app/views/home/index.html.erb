@@ -46,5 +46,140 @@
 </div>
 
 <div class="main-content">
+  <div id="story-side" class="d-flex">
+    <div class="story-container border d-flex">
+      <div class="left-image w-50">
+        <%= image_tag 'left.jpg' %>
+      </div>
+      <div class="right-image w-50">
+        <div class="right-top">
+          <%= image_tag 'right-top.jpg' %>
+        </div>
+        <div class="right-bottom">
+          <%= image_tag 'right-bottom.jpg' %>
+        </div>
+      </div>
+    </div>
 
+    <div class="story-content">
+      <div class="story-main-title">
+        <span>Our Story</span>
+      </div>
+
+      <div class="story-subtitle text-white mt-2">
+        <span>NHO KITCHEN & BAMBU FRESNO</span>
+      </div>
+
+      <div class="story-description mt-4">
+        <span class="text-white"> Since 2009, Nho Kitchen has been a familiar name, <br>
+          starting as Nho Cafe, serving Vietnamese coffee <br>
+          and authentic Vietnamese cuisine like beef and <br>
+          crab noodle soup. With 14 years of customer sup- <br>
+          port, we have evolved into a high-quality restaurant. <br>
+          Now, NHO KITCHEN proudly offers a wide range of <br>
+          delectable dishes from Europe to Asia, with the aim <br>
+          of bringing you the ultimate culinary satisfaction.
+        </span>
+      </div>
+
+      <div class="more-about-us text-white mt-5">
+        <span><b>More About Us</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-of-the-month mt-5 pt-5">
+    <div class="story-main-title align-items-center d-flex justify-content-center">
+      <span>Food of the Month</span>
+    </div>
+
+    <div class="align-items-center d-flex flex-column justify-content-center mt-3 story-description">
+        <span class="text-white">But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</span>
+        <span class="text-white">and i will give you a complete account of the system</span>
+    </div>
+
+    <div class="align-items-center d-flex fotm-container justify-content-center mt-5">
+      <div class="fotm-item">
+        <div class="star d-flex align-items-center justify-content-center">
+          <% 5.times do %>
+            <i class="fa fa-star"></i>
+          <% end %>
+        </div>
+        <div class="fotm-image h-50">
+          <%= image_tag 'right-top.jpg' %>
+        </div>
+        <div class="d-flex flex-column fotm-info h-50">
+          <div class="align-items-center d-flex flex-column fotm-name justify-content-center">
+            <span>Grilled Shrimp Vermicelli</span>
+            <div class="underline mt-2"></div>
+          </div>
+          <div class="fotm-description mx-4 mt-1">
+            <span>One of the dishes loved by tourists with long soft noodles mixed with delicious broth creating a wonderful flavor.</span>
+          </div>
+          <div class="d-flex fotm-order mx-4 justify-content-between">
+            <div class="fotm-price">
+              <span>$10.00</span>
+            </div>
+            <div class="order-btn px-2">
+              <%= link_to 'Order now', root_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fotm-item m-5">
+        <div class="star d-flex align-items-center justify-content-center">
+          <% 5.times do %>
+            <i class="fa fa-star"></i>
+          <% end %>
+        </div>
+        <div class="fotm-image h-50">
+          <%= image_tag 'right-top.jpg' %>
+        </div>
+        <div class="d-flex flex-column fotm-info h-50">
+          <div class="align-items-center d-flex flex-column fotm-name justify-content-center">
+            <span>Egg Rolls</span>
+            <div class="underline mt-2"></div>
+          </div>
+          <div class="fotm-description mx-4 mt-1">
+            <span>Crispy spring rolls melt in your mouth mixed with a unique dipping sauce that is only available at Nho Kitchen, giving diners an unforgettable taste.</span>
+          </div>
+          <div class="d-flex fotm-order mx-4 justify-content-between">
+            <div class="fotm-price">
+              <span>$10.00</span>
+            </div>
+            <div class="order-btn px-2">
+              <%= link_to 'Order now', root_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fotm-item">
+        <div class="star d-flex align-items-center justify-content-center">
+          <% 5.times do %>
+            <i class="fa fa-star"></i>
+          <% end %>
+        </div>
+        <div class="fotm-image h-50">
+          <%= image_tag 'right-top.jpg' %>
+        </div>
+        <div class="d-flex flex-column fotm-info h-50">
+          <div class="align-items-center d-flex flex-column fotm-name justify-content-center">
+            <span>Spring Rolls</span>
+            <div class="underline mt-2"></div>
+          </div>
+          <div class="fotm-description mx-4 mt-1">
+            <span>Spring rolls attract diners with their bright beauty on the outside and delicious flavor inside that will definitely make you unable to refuse.</span>
+          </div>
+          <div class="d-flex fotm-order mx-4 justify-content-between">
+            <div class="fotm-price">
+              <span>$10.00</span>
+            </div>
+            <div class="order-btn px-2">
+              <%= link_to 'Order now', root_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

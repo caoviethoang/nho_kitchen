@@ -59,7 +59,7 @@
 
 
 .book-table-btn {
-  border: 1px solid #efb722!important;
+  border: 1px solid #efb722 !important;
   border-radius: 1rem;
   padding: 0rem 0.8rem;
   padding-bottom: 0.2rem;
@@ -72,7 +72,7 @@
 }
 
 .header-action {
-  padding-left:  50%;
+  padding-left: 50%;
   padding-right: 5%;
   position: fixed;
 }
@@ -81,17 +81,17 @@
   margin-left: auto;
 }
 
-.action > a {
+.action>a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-.action > a:hover {
+.action>a:hover {
   color: #efb722;
 }
 
 .order-now {
-  border: 1px solid #efb722!important;
+  border: 1px solid #efb722 !important;
   border-radius: 1rem;
   padding: 0rem 0.8rem;
   padding-bottom: 0.2rem;
@@ -99,6 +99,133 @@
 }
 
 .main-content {
+  background-color: #211f1d;
+}
+
+
+.story-container {
+  height: 450px;
+  border-color: #FFFFFF;
+  display: inline-table;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.story-content {
+  margin-left: 5%;
+  margin-top: 12%;
+}
+
+.story-main-title {
+  text-transform: capitalize;
+  color: #efb722;
+  font-size: 2rem;
+}
+
+.story-subtitle {
+  font-size: 1.2rem;
+}
+
+.left-image>img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-image {
+  padding: 10px;
+}
+
+.right-image {
+  padding: 10px 10px 10px 0;
+}
+
+.right-top,
+.right-bottom {
+  height: 50%;
+}
+
+.right-top {
+  padding-bottom: 10px;
+}
+
+.right-top>img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-bottom>img {
+  width: 100%;
+  height: 100%;
+}
+
+.fotm-image>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.fotm-item {
+  position: relative;
+  border-radius: 15px;
+  height: 400px;
+  width: 360px;
+}
+
+.star {
+  width: 100px;
+  border: 1px solid #efb722;
+  position: absolute;
+  bottom: 100%;
+  height: 30px;
+  margin-left: 37%;
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+}
+
+.star>i {
+  color: #efb722;
+  font-size: 10px;
+  margin: 0.15rem;
+}
+
+.fotm-info {
+  background-color: #FFFFFF;
+  border-radius: 0 0 15px 15px;
+}
+
+.fotm-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  height: 40% !important;
+}
+
+.underline {
+  width: 100px;
+  border-bottom: 3px solid #efb722;
+}
+
+.fotm-description {
+  font-size: 0.8rem;
+  height: 40% !important;
+}
+
+.fotm-order {
+  height: 20% !important;
+}
+
+.fotm-price {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.order-btn {
   background-color: #efb722;
-  height: 1000px;
+  height: 70%;
+  border-radius: 15px;
+}
+
+.order-btn>a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
