@@ -17,7 +17,7 @@
 .topnavbar-wrapper {
   height: 800px;
   overflow: hidden;
-  background-color: black;
+  background-image: url('c.jpg');
 }
 
 .demo-wrap {
@@ -42,21 +42,27 @@
   align-items: center;
   padding: 80px;
   color: #FFFFFF;
+  margin-top: 6rem !important;
 }
 
 #logo {
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .top-main-title {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .top-sub-title {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
+.double-quotes {
+  color: #efb722;
+  font-size: 1.5rem;
+}
 
 .book-table-btn {
   border: 1px solid #efb722 !important;
@@ -64,6 +70,7 @@
   padding: 0rem 0.8rem;
   padding-bottom: 0.2rem;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .book-table-btn:hover {
@@ -71,14 +78,17 @@
   color: darkblue;
 }
 
-.header-action {
-  padding-left: 50%;
-  padding-right: 5%;
-  position: fixed;
+.header {
+  padding-top: 2%;
+}
+
+.main-logo {
+  padding-left: 10%;
 }
 
 .action {
   margin-left: auto;
+  font-size: 1.1rem;
 }
 
 .action>a {
@@ -99,7 +109,7 @@
 }
 
 .main-content {
-  background-color: #211f1d;
+  background-image: url('t.jpg');
 }
 
 
@@ -119,7 +129,7 @@
 .story-main-title {
   text-transform: capitalize;
   color: #efb722;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .story-subtitle {
@@ -228,4 +238,174 @@
 .order-btn>a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+
+.recommend-image>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.recommend-item {
+  position: relative;
+  border-radius: 15px;
+  height: 300px;
+  width: 180px;
+}
+
+.recommend-info {
+  background-color: #3d3b3b;
+  border-radius: 0 0 15px 15px;
+  color: #FFFFFF;
+  height: 40%;
+}
+
+.recommend-name {
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  margin-top: 10%;
+}
+
+.recommend-description {
+  font-size: 0.7rem;
+  height: 40% !important;
+}
+
+.recommend-order {
+  height: 20% !important;
+}
+
+.recommend-price {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.recommend-rate>i {
+  font-size: 0.6rem;
+  color: #efb722;
+}
+
+.recommend-top {
+  height: 400px;
+}
+
+.saying-about-us {
+  background-image: url(c.jpg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 7rem;
+}
+
+.people-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.people-avatar>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.people-info {
+  width: 60%;
+}
+
+.saying-title {
+  font-size: 3rem;
+}
+
+#pp-position {
+  color: #999595;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #efb722;
+  border-radius: 50%;
+}
+
+.check>i {
+  height: 100%;
+  width: 100%;
+  color: #efb722;
+}
+
+.wc-background {
+  height: 400px;
+  width: 100%;
+  background-image: url(b.jpg);
+}
+
+.wc-item-content {
+  margin-left: 1%;
+}
+
+.why-choose-item {
+  background-color: #252222;
+  padding-bottom: 5rem;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.blank-area {
+  background-color: #302e2d;
+  height: 80px;
+}
+
+#footer {
+  background-color: #252222;
+}
+
+.thanks {
+  margin-right: 7rem !important;
+}
+
+.introduction {
+  margin-right: 7rem !important;
+  margin-left: 7rem !important;
+  width: 35% !important;
+  border-right: #efb722 3px solid;
+}
+
+.facebook {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #efb722;
+}
+
+.email {
+  height: 30px;
+  width: 100%;
+}
+
+.enter-email {
+  border: #efb722 1px solid;
+  border-radius: 15px 0 0 15px;
+}
+
+.subcribe {
+  background-color: #efb722;
+  height: 100%;
+  width: 100px;
+  border-radius: 0 15px 15px 0;
+}
+
+.quick-link {
+  border-right: #efb722 3px solid;
+  width: 13%;
+}
+
+.contact-number {
+  margin-left: 7rem !important;
+  width: 35% !important;
 }

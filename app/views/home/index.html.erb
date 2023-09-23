@@ -1,32 +1,32 @@
 <div class="topnavbar-wrapper">
   <%# <%= image_tag 'top-background.png', class: "demo-bg" %>
-  <div class="header">
+  <div class="d-flex header justify-content-between mx-5">
     <div class="main-logo">
       <%= image_tag 'logo.png', id: "logo" %>
     </div>
-    <div class="header-action d-flex">
-      <div class="action text-white">
+    <div class="align-items-center d-flex header-action justify-content-center">
+      <div class="action text-white mx-5">
         <%= link_to 'Home', root_path %>
       </div>
-      <div  class="action text-white">
-        <%= link_to 'About us', root_path %>
+      <div  class="action text-white mx-5">
+        <%= link_to 'About Us', root_path %>
       </div>
-      <div  class="action text-white">
+      <div  class="action text-white mx-5">
         <%= link_to 'Menu', root_path %>
       </div>
-      <div  class="action text-white">
+      <div  class="action text-white mx-5">
         <%= link_to 'Review', root_path %>
       </div>
-      <div  class="action text-white">
+      <div  class="action text-white mx-5">
         <%= link_to 'Contact Us', root_path %>
       </div>
-      <div  class="action text-white">
+      <div  class="action text-white mx-5">
         <%= link_to 'Order now', root_path, class: "order-now" %>
       </div>
     </div>
   </div>
 
-  <div class="top-content mt-5">
+  <div class="top-content">
     <div class="top-main-title">
       <span>Good Food, Great Vibes</span>
     </div>
@@ -35,11 +35,11 @@
       <span>Experience the Best of Vietnam, Right on Your Plate</span>
     </div>
 
-    <div class="double-quotes">
+    <div class="double-quotes mt-2 mb-3">
       <i class="fa fa-quote-left" aria-hidden="true"></i>
     </div>
 
-    <div class="book-table-btn">
+    <div class="book-table-btn mt-3">
       <span>Book a table</span>
     </div>
   </div>
@@ -47,7 +47,7 @@
 
 <div class="main-content">
   <div id="story-side" class="d-flex">
-    <div class="story-container border d-flex">
+    <div class="story-container border d-flex w-50">
       <div class="left-image w-50">
         <%= image_tag 'left.jpg' %>
       </div>
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="story-content">
+    <div class="story-content w-50">
       <div class="story-main-title">
         <span>Our Story</span>
       </div>
@@ -176,6 +176,302 @@
             </div>
             <div class="order-btn px-2">
               <%= link_to 'Order now', root_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="recommendation mt-4 pt-4">
+    <div class="story-main-title align-items-center d-flex justify-content-center">
+      <span>Personalized Recommendations</span>
+    </div>
+    <div class="d-flex justify-content-center recommend-top mt-5">
+      <div class="list-left mx-5">
+        <div class="d-flex justify-content-center recommend-double">
+          <% 2.times do %>
+            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
+              <div class="recommend-item">
+                <div class="recommend-image">
+                  <%= image_tag 'left.jpg' %>
+                </div>
+                <div class="d-flex flex-column recommend-info">
+                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                    <span>Fish Cake Soup</span>
+                  </div>
+                  <div class="d-flex justify-content-center recommend-description">
+                    <span><i>(Bánh Canh Chả Cá)</i></span>
+                  </div>
+                  <div class="d-flex recommend-order mx-3 justify-content-between">
+                    <div class="recommend-price">
+                      <i class="bi bi-tag-turn-right"></i>
+                      <span>$5.00</span>
+                    </div>
+                    <div class="recommend-rate">
+                      <i class="fa fa-star"></i>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="list-right mx-5">
+        <div class="d-flex justify-content-center recommend-double">
+          <% 2.times do %>
+            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
+              <div class="recommend-item">
+                <div class="recommend-image">
+                  <%= image_tag 'left.jpg' %>
+                </div>
+                <div class="d-flex flex-column recommend-info">
+                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                    <span>Fish Cake Soup</span>
+                  </div>
+                  <div class="d-flex justify-content-center recommend-description">
+                    <span><i>(Bánh Canh Chả Cá)</i></span>
+                  </div>
+                  <div class="d-flex recommend-order mx-3 justify-content-between">
+                    <div class="recommend-price">
+                      <i class="bi bi-tag-turn-right"></i>
+                      <span>$5.00</span>
+                    </div>
+                    <div class="recommend-rate">
+                      <i class="fa fa-star"></i>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <div class="recommend-item">
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center  recommend-bottom">
+      <div class="list-left mx-5">
+        <div class="d-flex justify-content-center recommend-double">
+          <% 2.times do %>
+            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
+              <div class="recommend-item">
+                <div class="recommend-image">
+                  <%= image_tag 'left.jpg' %>
+                </div>
+                <div class="d-flex flex-column recommend-info">
+                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                    <span>Fish Cake Soup</span>
+                  </div>
+                  <div class="d-flex justify-content-center recommend-description">
+                    <span><i>(Bánh Canh Chả Cá)</i></span>
+                  </div>
+                  <div class="d-flex recommend-order mx-3 justify-content-between">
+                    <div class="recommend-price">
+                      <i class="bi bi-tag-turn-right"></i>
+                      <span>$5.00</span>
+                    </div>
+                    <div class="recommend-rate">
+                      <i class="fa fa-star"></i>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="list-right mx-5">
+        <div class="d-flex justify-content-center recommend-double">
+          <% 2.times do %>
+            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
+              <div class="recommend-item">
+                <div class="recommend-image">
+                  <%= image_tag 'left.jpg' %>
+                </div>
+                <div class="d-flex flex-column recommend-info">
+                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                    <span>Fish Cake Soup</span>
+                  </div>
+                  <div class="d-flex justify-content-center recommend-description">
+                    <span><i>(Bánh Canh Chả Cá)</i></span>
+                  </div>
+                  <div class="d-flex recommend-order mx-3 justify-content-between">
+                    <div class="recommend-price">
+                      <i class="bi bi-tag-turn-right"></i>
+                      <span>$5.00</span>
+                    </div>
+                    <div class="recommend-rate">
+                      <i class="fa fa-star"></i>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="single-item" class="slider">
+    <div class="align-items-center d-flex flex-column justify-content-center mt-5 pt-5 saying-about-us">
+      <div class="saying-title text-white">
+        <span>What people are saying about us</span>
+      </div>
+      <div class="d-flex justify-content-center mt-4 people-saying w-50">
+        <div class="people-avatar mx-3">
+          <%= image_tag 'right-bottom.jpg' %>
+        </div>
+        <div class="people-info">
+          <div class="people-name">
+            <span id="pp-name" class="text-white"><b>KATHERINE</b></span> <span class="text-white"> /</span> 
+            <span id="pp-position"> OFFICE STAFF</span>
+          </div>
+          <div class="people-comment text-white">
+            <span>
+              I am really satisfied with the service the restaurant provides.
+              Product quality is very good, dedicated customer care
+              when needed, reasonable product prices. I will support the
+              restaurant regularly in the future.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="why-choose" class="align-items-center d-flex flex-column justify-content-center mt-5">
+    <div class="story-main-title">
+      <span>Why Choose Our Restaurant</span>
+    </div>
+    <div class="wc-background mt-5">
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center why-choose-item">
+    <div class="item-1 d-flex mt-5">
+      <div class="check mt-1">
+        <i class="align-items-center d-flex fa fa-check justify-content-center pr-3"></i>
+      </div>
+      <div class="wc-item-content">
+        <span class="text-white">
+          Bold Flavors: Indulge in the bold and tantalizing flavors of Vietnamese cuisine. From the fragrant herbs to the harmonious blend of
+          spices, every dish is a burst of deliciousness that will leave you craving for more.
+        </span>
+      </div>
+    </div>
+    <div class="item-2 d-flex pt-4">
+      <div class="check mt-1">
+        <i class="align-items-center d-flex fa fa-check justify-content-center pr-3"></i>
+      </div>
+      <div class="wc-item-content">
+        <span class="text-white">
+          Fresh and Healthy: Experience the goodness of fresh and healthy ingredients in our Vietnamese dishes. Packed with vibrant vegeta-
+          bles, lean proteins, and aromatic herbs, our menu offers a wholesome and nourishing dining experience.
+        </span>
+      </div>
+    </div>
+    <div class="item-3 d-flex pt-4">
+      <div class="check mt-1">
+        <i class="align-items-center d-flex fa fa-check justify-content-center pr-3"></i>
+      </div>
+      <div class="wc-item-content">
+        <span class="text-white">
+          Cultural Delight: Immerse yourself in the rich Vietnamese culture through our restaurant. From the vibrant decor to the warm hospitality,
+          we provide an authentic atmosphere that transports you to the heart of Vietnam, making your dining experience truly memorable.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank-area">
+  </div>
+
+  <div id="footer" class="d-flex pt-5 pb-5">
+    <div class="introduction">
+      <div class="d-flex flex-column text-white thanks">
+        <span>
+          Nho Kitchen has harmoniously combined space -
+          furniture - light - decorative items and carefully
+          down to every small detail to create an architectur-
+          al space filled with design and art.
+        </span>
+        <span class="pt-4">
+          Thanks to that, diners can easily experience the
+          space and authentic Vietnamese cuisine and save
+          unforgettable memories here.ttt
+        </span>
+        <div class="align-items-center d-flex justify-content-center mt-5 social">
+          <div class="w-25 d-flex">
+            <div class="facebook">
+              <i class="align-items-center d-flex fa fa-facebook justify-content-center text-white pt-1"></i>
+            </div>
+            <div class="facebook mx-4">
+              <i class="align-items-center d-flex fa fa-instagram justify-content-center text-white pt-1"></i>
+            </div>
+            <div class="facebook">
+              <i class="align-items-center d-flex fa fa-twitter justify-content-center text-white pt-1"></i>
+            </div>
+          </div>
+          <div class="email d-flex mx-5">
+            <div class="enter-email w-75">
+              <span class="text-white align-items-center d-flex justify-content-center">Enter your email address </span>
+            </div>
+            <div class="align-items-center d-flex justify-content-center subcribe w-25">
+              <span class="subcribe-text d-flex justify-content-center text-white">Subcribe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quick-link">
+      <h5 class="quick-link-title text-white">Quick links</h5>
+      <div class="link-menu d-flex flex-column text-white mt-4">
+        <span class="mt-3">Home</span>
+        <span class="mt-3">About Us</span>
+        <span class="mt-3">Menu</span>
+        <span class="mt-3">Review</span>
+        <span class="mt-3">Contact Us</span>
+      </div>
+    </div>
+    <div class="contact-number">
+      <h5 class="quick-link-title text-white">Contact Us</h5>
+      <div class="link-menu d-flex flex-column text-white mt-4">
+        <div class="phone-number d-flex mt-3">
+          <div class="facebook">
+            <i class="align-items-center d-flex fa fa-phone justify-content-center text-white pt-1"></i>
+          </div>
+          <span class="mx-3">
+            (559)233-4195
+          </span>
+        </div>
+        <div class="gmail d-flex mt-3">
+          <div class="facebook">
+            <i class="align-items-center d-flex fa fa-envelope justify-content-center text-white pt-1"></i>
+          </div>
+          <span class="mx-3">
+            nhokitchen@gmail.com
+          </span>
+        </div>
+        <div class="location d-flex mt-3">
+          <div class="facebook">
+            <i class="align-items-center d-flex fa fa-instagram justify-content-center text-white pt-1"></i>
+          </div>
+          <div class="location-address d-flex flex-column mx-3">
+            <div class="location-1">
+              <span>- Nho Kitchen Branch 1:</span><br>
+              <span>3145 E MCKINLEY AVE, FRESNO, CA 93703</span>
+            </div>
+            <div class="location-2 mt-3">
+              <span>- Nho Kitchen Branch 2:</span><br>
+              <span>6702 N CEDAR AVE # 103, FRESNO, CA 93710</span>
             </div>
           </div>
         </div>
