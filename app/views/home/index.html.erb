@@ -7,6 +7,7 @@
     <div class="align-items-center d-flex header-action justify-content-center">
       <div class="action text-white mx-5">
         <%= link_to 'Home', root_path %>
+        <%= button_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
       </div>
       <div  class="action text-white mx-5">
         <%= link_to 'About Us', root_path %>
