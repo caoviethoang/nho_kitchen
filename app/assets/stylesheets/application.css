@@ -108,6 +108,11 @@
   cursor: pointer;
 }
 
+.book-table-btn>a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .main-content {
   background-image: url('t.jpg');
 }
@@ -119,11 +124,13 @@
   display: inline-table;
   margin-top: 10%;
   margin-left: 15%;
+  width: 50%;
 }
 
 .story-content {
   margin-left: 5%;
   margin-top: 12%;
+  width: 50%;
 }
 
 .story-main-title {
@@ -408,4 +415,26 @@
 .contact-number {
   margin-left: 7rem !important;
   width: 35% !important;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    display: revert;
+  }
+
+  #story-side {
+    flex-direction: column !important;
+  }
+
+  .story-container {
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .story-content {
+    margin-top: 12%;
+    width: 100%;
+  }
 }

@@ -7,7 +7,6 @@
     <div class="align-items-center d-flex header-action justify-content-center">
       <div class="action text-white mx-5">
         <%= link_to 'Home', root_path %>
-        <%= button_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
       </div>
       <div  class="action text-white mx-5">
         <%= link_to 'About Us', root_path %>
@@ -22,7 +21,7 @@
         <%= link_to 'Contact Us', root_path %>
       </div>
       <div  class="action text-white mx-5">
-        <%= link_to 'Order now', root_path, class: "order-now" %>
+        <%= link_to 'Order now', 'https://www.facebook.com/messages/t/103707431418821', class: "order-now", target: "_blank" %>
       </div>
     </div>
   </div>
@@ -41,14 +40,14 @@
     </div>
 
     <div class="book-table-btn mt-3">
-      <span>Book a table</span>
+      <%= link_to 'Book a table', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', target: "blank" %>
     </div>
   </div>
 </div>
 
 <div class="main-content">
   <div id="story-side" class="d-flex">
-    <div class="story-container border d-flex w-50">
+    <div class="story-container border d-flex">
       <div class="left-image w-50">
         <%= image_tag 'left.jpg' %>
       </div>
@@ -62,7 +61,7 @@
       </div>
     </div>
 
-    <div class="story-content w-50">
+    <div class="story-content">
       <div class="story-main-title">
         <span>Our Story</span>
       </div>
