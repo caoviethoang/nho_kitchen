@@ -1,29 +1,77 @@
 <div class="topnavbar-wrapper">
   <%# <%= image_tag 'top-background.png', class: "demo-bg" %>
-  <div class="d-flex header justify-content-between mx-5">
+  <div class="d-flex header justify-content-between">
     <div class="main-logo">
-      <%= image_tag 'logo.png', id: "logo" %>
+      <%= image_tag 'logo.jpg', id: "logo" %>
     </div>
-    <div class="align-items-center d-flex header-action justify-content-center">
-      <div class="action text-white mx-5">
-        <%= link_to 'Home', root_path %>
+    <% if @is_mobile %>
+      <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <i class="fa fa-list navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"></i>
+          </button>
+          <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav">
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'Home', root_path %>
+                </div>
+              </li>
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'About Us', root_path %>
+                </div>
+              </li>
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'Home', root_path %>
+                </div>
+              </li>
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'Menu', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', target: "_blank" %>
+                </div>
+              </li>
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'Review', root_path %>
+                </div>
+              </li>
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'Contact Us', root_path %>
+                </div>
+              </li>
+              <li>
+                <div class="action text-white">
+                  <%= link_to 'Order now', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', class: "order-now", target: "_blank" %>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div  class="action text-white mx-5">
-        <%= link_to 'About Us', root_path %>
+    <% else %>
+      <div class="align-items-center d-flex header-action justify-content-center">
+        <div class="action text-white mx-5">
+          <%= link_to 'Home', root_path %>
+        </div>
+        <div class="action text-white mx-5">
+          <%= link_to 'About Us', root_path %>
+        </div>
+        <div class="action text-white mx-5">
+          <%= link_to 'Menu', root_path %>
+        </div>
+        <div class="action text-white mx-5">
+          <%= link_to 'Review', root_path %>
+        </div>
+        <div class="action text-white mx-5">
+          <%= link_to 'Contact Us', root_path %>
+        </div>
+        <div class="action text-white mx-5">
+          <%= link_to 'Order now', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', class: "order-now", target: "_blank" %>
+        </div>
       </div>
-      <div  class="action text-white mx-5">
-        <%= link_to 'Menu', root_path %>
-      </div>
-      <div  class="action text-white mx-5">
-        <%= link_to 'Review', root_path %>
-      </div>
-      <div  class="action text-white mx-5">
-        <%= link_to 'Contact Us', root_path %>
-      </div>
-      <div  class="action text-white mx-5">
-        <%= link_to 'Order now', 'https://www.facebook.com/messages/t/103707431418821', class: "order-now", target: "_blank" %>
-      </div>
-    </div>
+    <% end %>
   </div>
 
   <div class="top-content">
@@ -40,7 +88,7 @@
     </div>
 
     <div class="book-table-btn mt-3">
-      <%= link_to 'Book a table', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', target: "blank" %>
+      <%= link_to 'Book a table', 'https://www.facebook.com/messages/t/103707431418821', target: "blank" %>
     </div>
   </div>
 </div>
@@ -49,14 +97,14 @@
   <div id="story-side" class="d-flex">
     <div class="story-container border d-flex">
       <div class="left-image w-50">
-        <%= image_tag 'left.jpg' %>
+        <%= image_tag 'hu_tieu.jpg' %>
       </div>
       <div class="right-image w-50">
         <div class="right-top">
-          <%= image_tag 'right-top.jpg' %>
+          <%= image_tag 'com_chien_xa_xiu.jpg' %>
         </div>
         <div class="right-bottom">
-          <%= image_tag 'right-bottom.jpg' %>
+          <%= image_tag 'mi_tron_tom.jpg' %>
         </div>
       </div>
     </div>
@@ -88,7 +136,7 @@
     </div>
   </div>
 
-  <div class="food-of-the-month mt-5 pt-5">
+  <div class="food-of-the-month pt-5">
     <div class="story-main-title align-items-center d-flex justify-content-center">
       <span>Food of the Month</span>
     </div>
@@ -106,7 +154,7 @@
           <% end %>
         </div>
         <div class="fotm-image h-50">
-          <%= image_tag 'right-top.jpg' %>
+          <%= image_tag 'grilled_shrimp_vermicelli.jpg' %>
         </div>
         <div class="d-flex flex-column fotm-info h-50">
           <div class="align-items-center d-flex flex-column fotm-name justify-content-center">
@@ -121,7 +169,7 @@
               <span>$10.00</span>
             </div>
             <div class="order-btn px-2">
-              <%= link_to 'Order now', root_path %>
+              <%= link_to 'Order now', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', class: "order-now", target: "_blank" %>
             </div>
           </div>
         </div>
@@ -133,7 +181,7 @@
           <% end %>
         </div>
         <div class="fotm-image h-50">
-          <%= image_tag 'right-top.jpg' %>
+          <%= image_tag 'egg_rolls.jpg' %>
         </div>
         <div class="d-flex flex-column fotm-info h-50">
           <div class="align-items-center d-flex flex-column fotm-name justify-content-center">
@@ -141,14 +189,14 @@
             <div class="underline mt-2"></div>
           </div>
           <div class="fotm-description mx-4 mt-1">
-            <span>Crispy spring rolls melt in your mouth mixed with a unique dipping sauce that is only available at Nho Kitchen, giving diners an unforgettable taste.</span>
+            <span>Crispy spring rolls melt in your mouth mixed with a unique dipping sauce that is only available at Nho Kitchen.</span>
           </div>
           <div class="d-flex fotm-order mx-4 justify-content-between">
             <div class="fotm-price">
               <span>$10.00</span>
             </div>
             <div class="order-btn px-2">
-              <%= link_to 'Order now', root_path %>
+              <%= link_to 'Order now', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', class: "order-now", target: "_blank" %>
             </div>
           </div>
         </div>
@@ -160,7 +208,7 @@
           <% end %>
         </div>
         <div class="fotm-image h-50">
-          <%= image_tag 'right-top.jpg' %>
+          <%= image_tag 'spring_rolls.jpg' %>
         </div>
         <div class="d-flex flex-column fotm-info h-50">
           <div class="align-items-center d-flex flex-column fotm-name justify-content-center">
@@ -175,14 +223,14 @@
               <span>$10.00</span>
             </div>
             <div class="order-btn px-2">
-              <%= link_to 'Order now', root_path %>
+              <%= link_to 'Order now', 'https://food.google.com/chooseprovider?restaurantId=%2Fg%2F11kpqbr0j8&g2lbs=ANTchaM4fvEpjjNR2eWcaxvl_s24DkJk89EYii9Xw8Dv9qn1uKbEa7OWnclBE2X71Itc_S6l4V4ZUfr6WCx0Y_wQt0kf4ngiopr1N4HbMJ_EUMwtqaUD0S2yeVqNrQs9g6mOutf5kyQ3&hl=vi-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=K0MVZZm8OtjhkPIPhtsP&ei=K0MVZZm8OtjhkPIPhtsP&opi=89978449&addressId&orderType=2&partnerId&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&fbclid=IwAR3PV0Wi3xtviU6io0ntH6_PIzqvGLsSubSL38pb13cRQKYuzKlx36G-tyA&sei=CfsULrBPsmaKEdu-YpSpEn25&utm_campaign&utm_source=search', class: "order-now", target: "_blank" %>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="recommendation mt-4 pt-4">
     <div class="story-main-title align-items-center d-flex justify-content-center">
       <span>Personalized Recommendations</span>
@@ -190,169 +238,583 @@
     <div class="d-flex justify-content-center recommend-top mt-5">
       <div class="list-left mx-5">
         <div class="d-flex justify-content-center recommend-double">
-          <% 2.times do %>
-            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
-              <div class="recommend-item">
-                <div class="recommend-image">
-                  <%= image_tag 'left.jpg' %>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'chao_ca.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Fish Cake Soup</span>
                 </div>
-                <div class="d-flex flex-column recommend-info">
-                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
-                    <span>Fish Cake Soup</span>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>(Bánh Canh Chả Cá)</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$5.00</span>
                   </div>
-                  <div class="d-flex justify-content-center recommend-description">
-                    <span><i>(Bánh Canh Chả Cá)</i></span>
-                  </div>
-                  <div class="d-flex recommend-order mx-3 justify-content-between">
-                    <div class="recommend-price">
-                      <i class="bi bi-tag-turn-right"></i>
-                      <span>$5.00</span>
-                    </div>
-                    <div class="recommend-rate">
-                      <i class="fa fa-star"></i>
-                      <span>4.5</span>
-                    </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
                   </div>
                 </div>
               </div>
             </div>
-          <% end %>
+          </div>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'lau_duoi_bo.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Oxtail Tendon Hotpot</span>
+                </div>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>( Lẩu Gân Đuôi Bò )</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$5.00</span>
+                  </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="list-right mx-5">
         <div class="d-flex justify-content-center recommend-double">
-          <% 2.times do %>
-            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
-              <div class="recommend-item">
-                <div class="recommend-image">
-                  <%= image_tag 'left.jpg' %>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'special_sandwiches.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Special Combination Sandwiches</span>
                 </div>
-                <div class="d-flex flex-column recommend-info">
-                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
-                    <span>Fish Cake Soup</span>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>( Bánh Mì Thịt Nguội )</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$8.00</span>
                   </div>
-                  <div class="d-flex justify-content-center recommend-description">
-                    <span><i>(Bánh Canh Chả Cá)</i></span>
-                  </div>
-                  <div class="d-flex recommend-order mx-3 justify-content-between">
-                    <div class="recommend-price">
-                      <i class="bi bi-tag-turn-right"></i>
-                      <span>$5.00</span>
-                    </div>
-                    <div class="recommend-rate">
-                      <i class="fa fa-star"></i>
-                      <span>4.5</span>
-                    </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
                   </div>
                 </div>
               </div>
             </div>
-          <% end %>
-        </div>
-        <div class="recommend-item">
+          </div>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'bun_cha_ca.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Fish ball noodles</span>
+                </div>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>( Bún Chả Cá )</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$5.00</span>
+                  </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="d-flex justify-content-center  recommend-bottom">
       <div class="list-left mx-5">
         <div class="d-flex justify-content-center recommend-double">
-          <% 2.times do %>
-            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
-              <div class="recommend-item">
-                <div class="recommend-image">
-                  <%= image_tag 'left.jpg' %>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'bun_tom_thit.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Grilled Pork, Shrimp,..</span>
                 </div>
-                <div class="d-flex flex-column recommend-info">
-                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
-                    <span>Fish Cake Soup</span>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>( Bún Tôm Thịt Nướng )</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$10.00</span>
                   </div>
-                  <div class="d-flex justify-content-center recommend-description">
-                    <span><i>(Bánh Canh Chả Cá)</i></span>
-                  </div>
-                  <div class="d-flex recommend-order mx-3 justify-content-between">
-                    <div class="recommend-price">
-                      <i class="bi bi-tag-turn-right"></i>
-                      <span>$5.00</span>
-                    </div>
-                    <div class="recommend-rate">
-                      <i class="fa fa-star"></i>
-                      <span>4.5</span>
-                    </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
                   </div>
                 </div>
               </div>
             </div>
-          <% end %>
+          </div>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'bun_bo_hue.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Hue’s Style Soup</span>
+                </div>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>( Bún Bò Huế )</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$5.00</span>
+                  </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="list-right mx-5">
         <div class="d-flex justify-content-center recommend-double">
-          <% 2.times do %>
-            <div class="align-items-center d-flex recommend-container justify-content-center mt-5 mx-4">
-              <div class="recommend-item">
-                <div class="recommend-image">
-                  <%= image_tag 'left.jpg' %>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'com_suon_bi_cha.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Grilled Porkchop,..</span>
                 </div>
-                <div class="d-flex flex-column recommend-info">
-                  <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
-                    <span>Fish Cake Soup</span>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>( Cơm, Sườn, Bì, Chả )</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$10.00</span>
                   </div>
-                  <div class="d-flex justify-content-center recommend-description">
-                    <span><i>(Bánh Canh Chả Cá)</i></span>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
                   </div>
-                  <div class="d-flex recommend-order mx-3 justify-content-between">
-                    <div class="recommend-price">
-                      <i class="bi bi-tag-turn-right"></i>
-                      <span>$5.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+            <div class="recommend-item">
+              <div class="recommend-image">
+                <%= image_tag 'bun_nem_nuong.jpg' %>
+              </div>
+              <div class="d-flex flex-column recommend-info">
+                <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                  <span>Fish Cake Soup</span>
+                </div>
+                <div class="d-flex justify-content-center recommend-description">
+                  <span><i>(Bánh Canh Chả Cá)</i></span>
+                </div>
+                <div class="d-flex recommend-order mx-3 justify-content-between">
+                  <div class="recommend-price">
+                    <i class="bi bi-tag-turn-right"></i>
+                    <span>$5.00</span>
+                  </div>
+                  <div class="recommend-rate">
+                    <i class="fa fa-star"></i>
+                    <span>4.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center more">
+      <div class="collapse" id="collapsewithlink" aria-labelledby="more">
+        <div class="card card-body">
+          <div class="d-flex justify-content-center recommend-more">
+            <div class="list-left mx-5">
+              <div class="d-flex justify-content-center recommend-double">
+                <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                  <div class="recommend-item">
+                    <div class="recommend-image">
+                      <%= image_tag 'hu_tieu_bo_kho.jpg' %>
                     </div>
-                    <div class="recommend-rate">
-                      <i class="fa fa-star"></i>
-                      <span>4.5</span>
+                    <div class="d-flex flex-column recommend-info">
+                      <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                        <span>Beef noodles</span>
+                      </div>
+                      <div class="d-flex justify-content-center recommend-description">
+                        <span><i>( Hủ Tiếu Bò Kho )</i></span>
+                      </div>
+                      <div class="d-flex recommend-order mx-3 justify-content-between">
+                        <div class="recommend-price">
+                          <i class="bi bi-tag-turn-right"></i>
+                          <span>$5.00</span>
+                        </div>
+                        <div class="recommend-rate">
+                          <i class="fa fa-star"></i>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                  <div class="recommend-item">
+                    <div class="recommend-image">
+                      <%= image_tag 'mi_quang.jpg' %>
+                    </div>
+                    <div class="d-flex flex-column recommend-info">
+                      <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                        <span>Quang Nuddle</span>
+                      </div>
+                      <div class="d-flex justify-content-center recommend-description">
+                        <span><i>( Mì Quảng )</i></span>
+                      </div>
+                      <div class="d-flex recommend-order mx-3 justify-content-between">
+                        <div class="recommend-price">
+                          <i class="bi bi-tag-turn-right"></i>
+                          <span>$5.00</span>
+                        </div>
+                        <div class="recommend-rate">
+                          <i class="fa fa-star"></i>
+                          <span>4.5</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          <% end %>
+
+            <div class="list-right mx-5">
+              <div class="d-flex justify-content-center recommend-double">
+                <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                  <div class="recommend-item">
+                    <div class="recommend-image">
+                      <%= image_tag 'com_chien_hai_san.jpg' %>
+                    </div>
+                    <div class="d-flex flex-column recommend-info">
+                      <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                        <span>Seafood Fried Rice</span>
+                      </div>
+                      <div class="d-flex justify-content-center recommend-description">
+                        <span><i>( Cơm Chiên Hải Sản )</i></span>
+                      </div>
+                      <div class="d-flex recommend-order mx-3 justify-content-between">
+                        <div class="recommend-price">
+                          <i class="bi bi-tag-turn-right"></i>
+                          <span>$5.00</span>
+                        </div>
+                        <div class="recommend-rate">
+                          <i class="fa fa-star"></i>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                  <div class="recommend-item">
+                    <div class="recommend-image">
+                      <%= image_tag 'lau_ca_bong_lau.jpg' %>
+                    </div>
+                    <div class="d-flex flex-column recommend-info">
+                      <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                        <span>Fish Cake Soup</span>
+                      </div>
+                      <div class="d-flex justify-content-center recommend-description">
+                        <span><i>(Lẩu Cá Bông Lau)</i></span>
+                      </div>
+                      <div class="d-flex recommend-order mx-3 justify-content-between">
+                        <div class="recommend-price">
+                          <i class="bi bi-tag-turn-right"></i>
+                          <span>$15.00</span>
+                        </div>
+                        <div class="recommend-rate">
+                          <i class="fa fa-star"></i>
+                          <span>4.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="d-flex justify-content-center recommend-more">
+              <div class="list-left mx-5">
+                <div class="d-flex justify-content-center recommend-double">
+                  <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                    <div class="recommend-item">
+                      <div class="recommend-image">
+                        <%= image_tag 'chao_ca.jpg' %>
+                      </div>
+                      <div class="d-flex flex-column recommend-info">
+                        <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                          <span>Fish Soup</span>
+                        </div>
+                        <div class="d-flex justify-content-center recommend-description">
+                          <span><i>( Cháo Cá )</i></span>
+                        </div>
+                        <div class="d-flex recommend-order mx-3 justify-content-between">
+                          <div class="recommend-price">
+                            <i class="bi bi-tag-turn-right"></i>
+                            <span>$5.00</span>
+                          </div>
+                          <div class="recommend-rate">
+                            <i class="fa fa-star"></i>
+                            <span>4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                    <div class="recommend-item">
+                      <div class="recommend-image">
+                        <%= image_tag 'com_chien_xa_xiu.jpg' %>
+                      </div>
+                      <div class="d-flex flex-column recommend-info">
+                        <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                          <span>Char Xiu Fried Rice</span>
+                        </div>
+                        <div class="d-flex justify-content-center recommend-description">
+                          <span><i>( Cơm Chiên Xá Xíu )</i></span>
+                        </div>
+                        <div class="d-flex recommend-order mx-3 justify-content-between">
+                          <div class="recommend-price">
+                            <i class="bi bi-tag-turn-right"></i>
+                            <span>$5.00</span>
+                          </div>
+                          <div class="recommend-rate">
+                            <i class="fa fa-star"></i>
+                            <span>4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-right mx-5">
+                <div class="d-flex justify-content-center recommend-double">
+                  <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                    <div class="recommend-item">
+                      <div class="recommend-image">
+                        <%= image_tag 'mi_tron_tom.jpg' %>
+                      </div>
+                      <div class="d-flex flex-column recommend-info">
+                        <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                          <span>Shrimp Mixed Noodles</span>
+                        </div>
+                        <div class="d-flex justify-content-center recommend-description">
+                          <span><i>( Mì Trộn Tôm )</i></span>
+                        </div>
+                        <div class="d-flex recommend-order mx-3 justify-content-between">
+                          <div class="recommend-price">
+                            <i class="bi bi-tag-turn-right"></i>
+                            <span>$5.00</span>
+                          </div>
+                          <div class="recommend-rate">
+                            <i class="fa fa-star"></i>
+                            <span>4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="align-items-center d-flex recommend-container justify-content-center mt-5">
+                    <div class="recommend-item">
+                      <div class="recommend-image">
+                        <%= image_tag 'lau_thai_hai_san.jpg' %>
+                      </div>
+                      <div class="d-flex flex-column recommend-info">
+                        <div class="align-items-center d-flex flex-column recommend-name justify-content-center">
+                          <span>Seafood hotpot</span>
+                        </div>
+                        <div class="d-flex justify-content-center recommend-description">
+                          <span><i>( Lẩu Thái Hải Sản )</i></span>
+                        </div>
+                        <div class="d-flex recommend-order mx-3 justify-content-between">
+                          <div class="recommend-price">
+                            <i class="bi bi-tag-turn-right"></i>
+                            <span>$15.00</span>
+                          </div>
+                          <div class="recommend-rate">
+                            <i class="fa fa-star"></i>
+                            <span>4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
+      <p class="d-flex justify-content-center mt-5">
+        <a class="book-table-btn" data-bs-toggle="collapse" href="#collapsewithlink" role="button" aria-expanded="false" aria-controls="collapsewithlink">See more</a>
+      </p>
     </div>
   </div>
-  
-  <div id="single-item" class="slider">
-    <div class="align-items-center d-flex flex-column justify-content-center mt-5 pt-5 saying-about-us">
-      <div class="saying-title text-white">
-        <span>What people are saying about us</span>
-      </div>
-      <div class="d-flex justify-content-center mt-4 people-saying w-50">
-        <div class="people-avatar mx-3">
-          <%= image_tag 'right-bottom.jpg' %>
-        </div>
-        <div class="people-info">
-          <div class="people-name">
-            <span id="pp-name" class="text-white"><b>KATHERINE</b></span> <span class="text-white"> /</span> 
-            <span id="pp-position"> OFFICE STAFF</span>
+
+  <div class="carousel">
+    <ul class="slides">
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container" id="saying-about-us-1">
+        <div class="align-items-center d-flex flex-column justify-content-center mt-5 pt-5">
+          <div class="saying-title text-white">
+            <span>What people are saying about us</span>
           </div>
-          <div class="people-comment text-white">
-            <span>
-              I am really satisfied with the service the restaurant provides.
-              Product quality is very good, dedicated customer care
-              when needed, reasonable product prices. I will support the
-              restaurant regularly in the future.
-            </span>
+          <div class="d-flex justify-content-center mt-4 people-saying">
+            <div class="people-avatar mx-3">
+              <%= image_tag 'hu_tieu.jpg' %>
+            </div>
+            <div class="people-info">
+              <div class="people-name">
+                <span id="pp-name" class="text-white"><b>KATHERINE</b></span> <span class="text-white"> /</span>
+                <span id="pp-position"> OFFICE STAFF</span>
+              </div>
+              <div class="people-comment text-white">
+                <span>
+                  I am really satisfied with the service the restaurant provides.
+                  Product quality is very good, dedicated customer care
+                  when needed, reasonable product prices. I will support the
+                  restaurant regularly in the future.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-2" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container" id="saying-about-us-2">
+        <div class="slide-image">
+          <div class="align-items-center d-flex flex-column justify-content-center mt-5 pt-5">
+            <div class="saying-title text-white">
+              <span>What people are saying about us</span>
+            </div>
+            <div class="d-flex justify-content-center mt-4 people-saying">
+              <div class="people-avatar mx-3">
+                <%= image_tag 'com_chien_xa_xiu.jpg' %>
+              </div>
+              <div class="people-info">
+                <div class="people-name">
+                  <span id="pp-name" class="text-white"><b>KATHERINE</b></span> <span class="text-white"> /</span>
+                  <span id="pp-position"> OFFICE STAFF</span>
+                </div>
+                <div class="people-comment text-white">
+                  <span>
+                    I am really satisfied with the service the restaurant provides.
+                    Product quality is very good, dedicated customer care
+                    when needed, reasonable product prices. I will support the
+                    restaurant regularly in the future.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-3" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container" id="saying-about-us-3">
+        <div class="slide-image">
+          <div class="align-items-center d-flex flex-column justify-content-center mt-5 pt-5">
+            <div class="saying-title text-white">
+              <span>What people are saying about us</span>
+            </div>
+            <div class="d-flex justify-content-center mt-4 people-saying">
+              <div class="people-avatar mx-3">
+                <%= image_tag 'bun_bo_hue.jpg' %>
+              </div>
+              <div class="people-info">
+                <div class="people-name">
+                  <span id="pp-name" class="text-white"><b>KATHERINE</b></span> <span class="text-white"> /</span>
+                  <span id="pp-position"> OFFICE STAFF</span>
+                </div>
+                <div class="people-comment text-white">
+                  <span>
+                    I am really satisfied with the service the restaurant provides.
+                    Product quality is very good, dedicated customer care
+                    when needed, reasonable product prices. I will support the
+                    restaurant regularly in the future.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-1" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
       </div>
-    </div>
+    </ul>
   </div>
 
   <div id="why-choose" class="align-items-center d-flex flex-column justify-content-center mt-5">
     <div class="story-main-title">
       <span>Why Choose Our Restaurant</span>
     </div>
-    <div class="wc-background mt-5">
+    <div class="wc-background">
     </div>
   </div>
   <div class="d-flex flex-column justify-content-center why-choose-item">
@@ -409,7 +871,7 @@
           unforgettable memories here.ttt
         </span>
         <div class="align-items-center d-flex justify-content-center mt-5 social">
-          <div class="w-25 d-flex">
+          <div class="d-flex social-logo">
             <div class="facebook">
               <i class="align-items-center d-flex fa fa-facebook justify-content-center text-white pt-1"></i>
             </div>

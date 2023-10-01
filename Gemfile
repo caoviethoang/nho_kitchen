@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.4'
 
+gem "browser"
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.6'

@@ -65,6 +65,8 @@
 }
 
 .book-table-btn {
+  color: #FFFFFF;
+  text-decoration: none;
   border: 1px solid #efb722 !important;
   border-radius: 1rem;
   padding: 0rem 0.8rem;
@@ -80,6 +82,8 @@
 
 .header {
   padding-top: 2%;
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
 }
 
 .main-logo {
@@ -236,6 +240,10 @@
   font-size: 1rem;
 }
 
+.food-of-the-month {
+  margin-top: 3rem;
+}
+
 .order-btn {
   background-color: #efb722;
   height: 70%;
@@ -250,7 +258,7 @@
 
 .recommend-image>img {
   width: 100%;
-  height: 100%;
+  height: 180px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -298,11 +306,32 @@
   height: 400px;
 }
 
-.saying-about-us {
-  background-image: url(c.jpg);
+#saying-about-us-1,
+#saying-about-us-2,
+#saying-about-us-3 {
   width: 100%;
   height: 100%;
   padding-bottom: 7rem;
+}
+
+#saying-about-us-1 {
+  background-image: url(c.jpg);
+}
+
+#saying-about-us-2 {
+  background-image: url(c.jpg);
+}
+
+#saying-about-us-3 {
+  background-image: url(c.jpg);
+}
+
+.people-saying {
+  width: 50% !important;
+}
+
+.social-logo {
+  width: 25%;
 }
 
 .people-avatar {
@@ -324,6 +353,11 @@
   font-size: 3rem;
 }
 
+.recommend-container {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
 #pp-position {
   color: #999595;
 }
@@ -342,9 +376,10 @@
 }
 
 .wc-background {
+  margin-top: 3rem;
   height: 400px;
   width: 100%;
-  background-image: url(b.jpg);
+  background-image: url(mi_quang.jpg);
 }
 
 .wc-item-content {
@@ -419,7 +454,34 @@
 
 @media (max-width: 992px) {
   .wrapper {
-    display: revert;
+    display: revert !important;
+  }
+
+  .header {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .topnavbar-wrapper {
+    height: 450px;
+  }
+
+  .top-content {
+    padding: 0;
+  }
+
+  .top-main-title {
+    font-size: 1.7rem;
+  }
+
+  .main-logo {
+    padding-left: 2% !important;
+  }
+
+  #logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
   }
 
   #story-side {
@@ -436,5 +498,340 @@
   .story-content {
     margin-top: 12%;
     width: 100%;
+    margin-left: 0;
   }
+
+  .story-main-title {
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 1.6rem;
+  }
+
+  .story-subtitle {
+    font-size: 1rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+
+  .story-description {
+    font-size: 0.8rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+
+  .more-about-us {
+    font-size: 1rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+
+  .saying-title {
+    font-size: 1.4rem;
+  }
+
+  .people-saying {
+    width: 100% !important;
+  }
+
+  .why-choose-item {
+    flex-direction: column !important;
+  }
+
+  .wc-background {
+    height: 250px;
+    margin-top: 0;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .wc-item-content {
+    font-size: 0.8rem;
+    margin-left: 4%;
+  }
+
+  #footer {
+    flex-direction: column !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+
+  .introduction {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    border-right: 0;
+    border-bottom: #efb722 3px solid;
+    padding-bottom: 1rem !important;
+  }
+
+  .thanks {
+    margin-right: 0 !important;
+    font-size: 0.8rem;
+  }
+
+  .social {
+    flex-direction: column !important;
+  }
+
+  .social-logo {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .facebook>i {
+    padding-top: 0.5rem !important;
+  }
+
+  .enter-email>span {
+    padding-top: 0.25rem !important;
+  }
+
+  .quick-link {
+    margin-top: 3rem !important;
+    width: 100% !important;
+    border-right: 0;
+    border-bottom: #efb722 3px solid;
+    padding-bottom: 1rem !important;
+  }
+
+  .contact-number {
+    margin-top: 3rem !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    border-right: 0;
+  }
+
+  .fotm-container {
+    flex-direction: column !important;
+  }
+
+  .fotm-image {
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .fotm-info{
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .story-main-title {
+    padding-bottom: 3rem!important;
+  }
+
+  .recommend-top {
+    flex-direction: column!important;
+    padding-top: 3rem!important;
+  }
+
+  .recommend-bottom {
+    flex-direction: column!important;
+    padding-top: 10rem!important;
+  }
+
+  .recommend-more {
+    flex-direction: column!important;
+  }
+
+  .food-of-the-month {
+    margin-top: 0;
+  }
+
+  .recommend-container {
+    margin-right: 0.5rem!important;
+    margin-left: 0!important;
+  }
+
+  .more {
+    margin-top: 0 !important;
+  }
+
+  #custom-bootstrap-menu .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-default  {
+    background-color: unset !important;
+    border-color: unset !important;
+  }
+
+  .navbar {
+    border: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .container-fluid {
+    justify-content: center !important;
+  }
+  #custom-bootstrap-menu .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  #custom-bootstrap-menu .navbar-toggle {
+    display: block !important;
+    font-size: 20px;
+    color: #7f8082;
+  }
+  #custom-bootstrap-menu .navbar-collapse {
+    text-align: center;
+    display: block !important;
+  }
+  #custom-bootstrap-menu .navbar-header {
+    float: none;
+    display: block !important;
+  }
+  #custom-bootstrap-menu .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  #custom-bootstrap-menu .navbar-nav > li {
+    float: none;
+  }
+  #custom-bootstrap-menu .navbar-nav> li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.more {
+  margin-top: 3rem;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none;
+}
+
+
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+
+.slide-image {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover+.carousel-controls label {
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked+.slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .carousel-controls label {
+  display: block;
+}
+
+input#img-1:checked~.carousel-dots label#img-dot-1,
+input#img-2:checked~.carousel-dots label#img-dot-2,
+input#img-3:checked~.carousel-dots label#img-dot-3,
+input#img-4:checked~.carousel-dots label#img-dot-4,
+input#img-5:checked~.carousel-dots label#img-dot-5,
+input#img-6:checked~.carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+
+input:checked+.slide-container .nav label {
+  display: block;
+}
+
+.card {
+  background-image: url('t.jpg') !important;
 }
