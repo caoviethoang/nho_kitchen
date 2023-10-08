@@ -1,4 +1,3 @@
-const { environment } = require('@rails/webpacker')
 
 environment.loaders.append('jquery', {
     test: require.resolve('jquery'),
