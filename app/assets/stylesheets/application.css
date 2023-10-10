@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+  font-family: sans-serif !important;
+}
+
 .topnavbar-wrapper {
   height: 800px;
   overflow: hidden;
@@ -460,6 +464,10 @@
   .header {
     margin-right: 0 !important;
     margin-left: 0 !important;
+  }
+
+  .story-container {
+    height: unset;
   }
 
   .topnavbar-wrapper {
