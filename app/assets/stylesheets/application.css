@@ -366,18 +366,17 @@ body {
   color: #999595;
 }
 
-.check {
+.bi-check-circle {
   width: 20px;
   height: 20px;
-  border: 1px solid #efb722;
-  border-radius: 50%;
+  color: #efb722;
 }
 
-.check>i {
+/* .check>i {
   height: 100%;
   width: 100%;
   color: #efb722;
-}
+} */
 
 .wc-background {
   margin-top: 3rem;
@@ -548,6 +547,7 @@ body {
   .wc-background {
     height: 250px;
     margin-top: 0;
+    background-image: url(lau_thai_hai_san.jpg) !important;
   }
 
   .item-1,
@@ -595,6 +595,13 @@ body {
 
   .facebook>i {
     padding-top: 0.5rem !important;
+  }
+
+  .footer-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #efb722;
   }
 
   .enter-email>span {
