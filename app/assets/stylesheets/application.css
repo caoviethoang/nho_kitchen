@@ -21,7 +21,9 @@ body {
 .topnavbar-wrapper {
   height: 800px;
   overflow: hidden;
-  background-image: url('c.jpg');
+  background-image: url('top-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .demo-wrap {
@@ -95,8 +97,9 @@ body {
 }
 
 .action {
-  margin-left: auto;
   font-size: 1.1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .action>a {
@@ -319,15 +322,21 @@ body {
 }
 
 #saying-about-us-1 {
-  background-image: url(c.jpg);
+  background-image: url(banh_mi_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #saying-about-us-2 {
-  background-image: url(c.jpg);
+  background-image: url(banh_mi_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #saying-about-us-3 {
-  background-image: url(c.jpg);
+  background-image: url(banh_mi_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .people-saying {
@@ -380,9 +389,11 @@ body {
 
 .wc-background {
   margin-top: 3rem;
-  height: 400px;
+  height: 450px;
   width: 100%;
-  background-image: url(mi_quang.jpg);
+  background-image: url(why_choose.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .wc-item-content {
@@ -455,7 +466,7 @@ body {
   width: 35% !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .wrapper {
     display: revert !important;
   }
@@ -548,6 +559,8 @@ body {
     height: 250px;
     margin-top: 0;
     background-image: url(lau_thai_hai_san.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .item-1,
@@ -849,4 +862,363 @@ input:checked+.slide-container .nav label {
 
 .card {
   background-image: url('t.jpg') !important;
+}
+
+
+@media (max-width: 768px) and (max-width:1365px) {
+  .main-content {
+    padding-top: 3rem!important;
+  }
+
+  .wrapper {
+    display: revert !important;
+  }
+
+  .action {
+    margin-right: 2.2rem!important;
+    margin-left: 0!important;
+  }
+
+  .header {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .story-container {
+    height: unset;
+  }
+
+  .topnavbar-wrapper {
+    height: 450px;
+  }
+
+  .top-content {
+    padding: 0;
+  }
+
+  .top-main-title {
+    font-size: 2.7rem;
+  }
+
+  .top-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .book-table-btn {
+    font-size: 1.5rem;
+  }
+
+  .main-logo {
+    padding-left: 2% !important;
+  }
+
+  #logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  #story-side {
+    flex-direction: column !important;
+  }
+
+  .story-container {
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .story-content {
+    margin-top: 12%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .story-main-title {
+    font-size: 2.5rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 1.6rem;
+  }
+
+  .story-subtitle {
+    font-size: 1.4rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+    display: flex!important;
+    justify-content: center!important;
+  }
+
+  .story-description {
+    font-size: 1.2rem;
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
+    display: flex!important;
+    justify-content: center!important;
+  }
+
+  .fotm-item {
+    position: relative!important;
+    border-radius: 15px!important;
+    height: 500px!important;
+    width: 450px!important;
+  }
+
+  .fotm-description {
+    font-size: 1rem !important;
+    height: 40% !important;
+  }
+
+  .fotm-order {
+    align-items: center!important;
+  }
+
+  .order-now {
+    display: flex!important;
+    margin-top: 0.25rem!important;
+  }
+
+  .more-about-us {
+    font-size: 1.4rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+    display: flex!important;
+    justify-content: center!important;
+  }
+
+  .recommend-item {
+    height: 320px !important;
+    width: 250px !important;
+  }
+
+  .story-main-title {
+    padding-bottom: 5rem!important;
+  }
+
+  .recommend-name {
+    font-size: 1.2rem !important;
+  }
+
+  .recommend-description {
+    font-size: 1rem !important;
+  }
+
+  .recommend-price, .recommend-rate {
+    font-size: 1.2rem;
+  }
+
+  .saying-title {
+    font-size: 2.4rem;
+  }
+
+  .people-name {
+    font-size: 1.5rem;
+  }
+
+  .people-comment {
+    font-size: 1.1rem;
+  }
+
+  .people-saying {
+    width: 100% !important;
+  }
+
+  .why-choose-item {
+    flex-direction: column !important;
+  }
+
+  .wc-background {
+    height: 380px;
+    margin-top: 0;
+    background-image: url(why_choose.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .wc-item-content {
+    font-size: 1.2rem;
+    margin-left: 4%;
+  }
+
+  #footer {
+    flex-direction: column !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+
+  .introduction {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    border-right: 0;
+    border-bottom: #efb722 3px solid;
+    padding-bottom: 1rem !important;
+  }
+
+  .thanks {
+    margin-right: 0 !important;
+    font-size: 1.2rem;
+  }
+
+  .social {
+    flex-direction: column !important;
+  }
+
+  .social-logo {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .facebook {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .facebook>i {
+    padding-top: 0.4rem !important;
+  }
+
+  .quick-link-title {
+    font-size: 1.5rem !important;
+  }
+
+  .link-menu  {
+    font-size: 1.3rem !important;
+  }
+
+  .footer-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #efb722;
+  }
+
+  .email {
+    height: 40px !important;
+  }
+
+  .enter-email>span {
+    padding-top: 0.25rem !important;
+  }
+
+  .quick-link {
+    margin-top: 3rem !important;
+    width: 100% !important;
+    border-right: 0;
+    border-bottom: #efb722 3px solid;
+    padding-bottom: 1rem !important;
+  }
+
+  .contact-number {
+    margin-top: 3rem !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    border-right: 0;
+  }
+
+  .fotm-container {
+    flex-direction: column !important;
+  }
+
+  .fotm-image {
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .fotm-info{
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .story-main-title {
+    padding-bottom: 3rem!important;
+  }
+
+  .recommend-top {
+    flex-direction: column!important;
+    padding-top: 3rem!important;
+  }
+
+  .recommend-bottom {
+    flex-direction: column!important;
+    padding-top: 10rem!important;
+  }
+
+  .recommend-more {
+    flex-direction: column!important;
+  }
+
+  .food-of-the-month {
+    margin-top: 0;
+  }
+
+  .recommend-container {
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .more {
+    margin-top: 0 !important;
+  }
+
+  ul.slides {
+    height: 435px !important;
+  }
+
+  #custom-bootstrap-menu .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-default  {
+    background-color: unset !important;
+    border-color: unset !important;
+  }
+
+  .navbar {
+    border: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .container-fluid {
+    justify-content: center !important;
+  }
+  #custom-bootstrap-menu .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  #custom-bootstrap-menu .navbar-toggle {
+    display: block !important;
+    font-size: 20px;
+    color: #7f8082;
+  }
+  #custom-bootstrap-menu .navbar-collapse {
+    text-align: center;
+    display: block !important;
+  }
+  #custom-bootstrap-menu .navbar-header {
+    float: none;
+    display: block !important;
+  }
+  #custom-bootstrap-menu .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  #custom-bootstrap-menu .navbar-nav > li {
+    float: none;
+  }
+  #custom-bootstrap-menu .navbar-nav> li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
