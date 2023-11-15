@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1'
 
+gem 'activeadmin'
 gem "browser"
 gem 'devise'
 gem 'devise-bootstrap-views'
@@ -19,6 +20,7 @@ gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
 gem "omniauth-rails_csrf_protection"
+gem "image_processing"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
